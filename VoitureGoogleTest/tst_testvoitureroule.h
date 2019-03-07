@@ -67,7 +67,7 @@ TEST_P(TestVoitureRecenteRouler, Range)
 }
 
 INSTANTIATE_TEST_SUITE_P(GroupVoitureRecente,TestVoitureRecenteRouler,
-          Values(0, 10000, 149999, 150000, 150001)
+          Values(0, 10000, 149999)
        );
 
 
