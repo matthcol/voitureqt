@@ -45,6 +45,8 @@ TEST_F(TestOldVoitureRouler, NoGaz) {
     int distance = 200;
     // when/then
     EXPECT_THROW(oldCar.rouler(distance), std::invalid_argument);
+    EXPECT_THAT(oldCar.kilometrage(), Eq(kmStart));
+    EXPECT_THAT(oldCar.jaugeCarburant(), Eq(jaugeStart));
 }
 
 class TestVoitureRecenteRouler: public TestWithParam<int> {
